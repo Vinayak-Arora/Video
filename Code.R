@@ -32,7 +32,7 @@ for(cname in colnames(df.true)[1:3]) {
 #Remove rows having value p2p_cdn = 0
 df.true <- df.true[df.true$p2p_cdn > 0 , ]
 
-#Loop to create dataframes to check performances of stream_id, browser and isp on the basis of quantiles
+#Loop to create dataframes to check performances of stream_id, browser and isp on the basis of quantilevalues of p2p_cdn column
 #isp.quantile.df contains quantile values for each isp, and so on.
 for(cname in colnames(df.true)[1:3]) {
   quantile.df <-  data.frame(matrix(nrow = 0, ncol = 5))
