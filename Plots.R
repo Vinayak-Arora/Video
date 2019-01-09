@@ -3,7 +3,7 @@
 library(dplyr)
 library(ggplot2)
 
-dest <- "C://Workspace//StreamRoot//data.csv"
+dest <- "C://Workspace//data.csv"
 df <- read.csv(dest, stringsAsFactors = FALSE)
 
 df <- na.omit(df)
